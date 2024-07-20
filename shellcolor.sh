@@ -51,7 +51,7 @@ script="${bol}$bord [${bol}${info}WhereLoc$bord -$info beta${bord}]"
 
 clear
 
-color() {
+shellcolor() {
 echo -e "$N N$W ${rN} res ${W}$N ${sub}sub$W"
 echo -e "$R R$W ${rR} res ${W}$R ${sub}sub$W"
 echo -e "$G G$n ${rG} res ${W}$G ${cur}sub$W"
@@ -66,9 +66,5 @@ echo -e "$T $F $A $E $S $I $U"
 echo -e "$autor $script"
 }
 
-while true;do
-	color
-	read update
-	termux-reload-settings
-	clear
-done
+clear
+shellcolor
